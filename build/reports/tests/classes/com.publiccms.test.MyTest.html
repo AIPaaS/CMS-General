@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.publiccms.test.MyTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.publiccms.test.MyTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.publiccms.test.html">com.publiccms.test</a> &gt; MyTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.172s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">log</td>
+<td>0.172s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>10-09 10:53:38:467 CST [INFO] DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+10-09 10:53:38:507 CST [INFO] DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@dd87daa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@222b00, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@43350d11, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fecf98f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4ef44447, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6aeb9d0]
+10-09 10:53:38:801 CST [INFO] GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@ea23517: startup date [Sun Oct 09 10:53:38 CST 2016]; root of context hierarchy
+十月 09, 2016 10:53:40 上午 com.mchange.v2.log.MLog &lt;clinit&gt;
+信息: MLog clients using java 1.4+ standard logging.
+十月 09, 2016 10:53:40 上午 com.mchange.v2.c3p0.C3P0Registry banner
+信息: Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+十月 09, 2016 10:53:41 上午 org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.1.1.Final}
+十月 09, 2016 10:53:41 上午 org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+十月 09, 2016 10:53:41 上午 org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+十月 09, 2016 10:53:41 上午 org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+十月 09, 2016 10:53:41 上午 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+信息: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -&gt; 10, acquireRetryAttempts -&gt; 30, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; true, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 20000, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -&gt; 2rxn9p9j1afppmm1pyyb5v|3802736c, debugUnreturnedConnectionStackTraces -&gt; false, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 2rxn9p9j1afppmm1pyyb5v|3802736c, idleConnectionTestPeriod -&gt; 0, initialPoolSize -&gt; 5, jdbcUrl -&gt; jdbc:mysql://127.0.0.1:3306/public_cms?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=round, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 25, maxIdleTimeExcessConnections -&gt; 1800, maxPoolSize -&gt; 20, maxStatements -&gt; 0, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 5, numHelperThreads -&gt; 3, numThreadsAwaitingCheckoutDefaultUser -&gt; 0, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, usesTraditionalReflectiveProxies -&gt; false ]
+十月 09, 2016 10:53:41 上午 org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+十月 09, 2016 10:53:41 上午 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl useContextualLobCreation
+INFO: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+十月 09, 2016 10:53:42 上午 org.hibernate.cache.spi.UpdateTimestampsCache &lt;init&gt;
+INFO: HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+十月 09, 2016 10:53:42 上午 org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory getCache
+WARN: HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+十月 09, 2016 10:53:42 上午 org.hibernate.cache.internal.StandardQueryCache &lt;init&gt;
+INFO: HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+十月 09, 2016 10:53:42 上午 org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory getCache
+WARN: HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+十月 09, 2016 10:53:42 上午 org.hibernate.search.engine.Version &lt;clinit&gt;
+INFO: HSEARCH000034: Hibernate Search 5.5.4.Final
+十月 09, 2016 10:53:43 上午 org.hibernate.search.engine.impl.ConfigContext getLuceneMatchVersion
+WARN: HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified: using LUCENE_CURRENT.
+10-09 10:53:44:833 CST [INFO] SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.support.GenericApplicationContext@ea23517: startup date [Sun Oct 09 10:53:38 CST 2016]; root of context hierarchy] and template loader path [/WEB-INF/]
+10-09 10:53:44:834 CST [INFO] ApplicationConfig$7 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+10-09 10:53:46:402 CST [INFO] ApplicationConfig$5 - Freemarker directives and methods Handler started
+10-09 10:53:46:413 CST [INFO] ApplicationConfig$5 - 88 template directives created:[_category,_categoryList,_categoryModelList,_categoryType,_categoryTypeList,_content,_contentFileList,_contentList,_contentRelatedList,_contentTagList,_facetSearch,_model,_modelList,_place,_placeList,_search,_tag,_tagList,_tagType,_tagTypeList,_word,_wordList,_logLoginList,_logOperateList,_logTask,_logTaskList,_logUploadList,_pluginLottery,_pluginLotteryList,_pluginLotteryUserList,_pluginSite,_pluginSiteList,_pluginVote,_pluginVoteItem,_pluginVoteItemList,_pluginVoteList,_pluginVoteUser,_pluginVoteUserList,_sysAppClientList,_sysApp,_sysAppList,_sysAppTokenList,_sysAuthorized,_sysClusterList,_sysConfig,_sysConfigExtendFieldList,_sysConfigItemList,_sysDeptCategory,_sysDeptCategoryList,_sysDept,_sysDeptList,_sysDeptPage,_sysDeptPageList,_sysDomain,_sysDomainList,_sysExtendFieldList,_sysFtpUser,_sysFtpUserList,_sysMoudle,_sysMoudleList,_sysRole,_sysRoleList,_sysRoleMoudle,_sysRoleMoudleList,_sysRoleUserList,_sysSite,_sysSiteList,_sysTask,_sysTaskList,_sysUser,_sysUserList,_sysUserTokenList,_createCategoryFile,_createContentFile,_createTemplateFile,_disk,_includePlace,_masterSite,_memory,_metadata,_placeMetadata,_systemProperties,_taskTemplateContent,_taskTemplateList,_templateContent,_templateList,_thumb,_version];
+10-09 10:53:46:414 CST [INFO] ApplicationConfig$5 - 13 methods created:[getCategoryAttribute,getConfigCodeList,getContentAttribute,getDate,getHtml,getMd5,getPage,getPlaceAttribute,getRandom,getSleep,getTemplateResult,getTextFromHtml,getUUID];
+10-09 10:53:46:432 CST [INFO] ApplicationConfig$5 - 5 task directives created:[_clearLog,_indexContent,_publishCategory,_publishContent,_publishPage];
+10-09 10:53:46:575 CST [INFO] FtpComponent - Ftp Listen on 21
+10-09 10:53:46:750 CST [INFO] ApplicationConfig$2 - Using DataSource [config.ApplicationConfig$1@491ac6e0] of Hibernate SessionFactory for HibernateTransactionManager
+10-09 10:53:47:099 CST [INFO] DefaultLifecycleProcessor - Starting beans in phase 2147483647
+10-09 10:53:47:099 CST [INFO] ApplicationConfig$9 - Starting Quartz Scheduler now
+10-09 10:53:47:106 CST [INFO] ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+10-09 10:53:47:248 CST [INFO] TransactionContext - Began transaction (1) for test context [DefaultTestContext@68c1bcaf testClass = MyTest, testInstance = com.publiccms.test.MyTest@74abae4, testMethod = log@MyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@440bf811 testClass = MyTest, locations = '{}', classes = '{class config.ApplicationConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [config.ApplicationConfig$2@5b9c8272]; rollback [true]
+10-09 10:53:47:317 CST [INFO] TransactionContext - Rolled back transaction for test context [DefaultTestContext@68c1bcaf testClass = MyTest, testInstance = com.publiccms.test.MyTest@74abae4, testMethod = log@MyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@440bf811 testClass = MyTest, locations = '{}', classes = '{class config.ApplicationConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.2.1</a> at 2016-10-9 10:53:47</p>
+</div>
+</div>
+</body>
