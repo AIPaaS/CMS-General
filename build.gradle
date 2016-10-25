@@ -21,7 +21,7 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 repositories {
-maven { url "http://10.1.228.199:18081/nexus/content/groups/public" }
+maven { url "http://10.1.228.199:18081/nexus/content/groups/public/" }
     mavenLocal()
     mavenCentral()
 }
@@ -35,7 +35,7 @@ ext {
     jacksonVersion = '2.8.1'
 }
 
-war{ baseName ='cms' }
+war{ baseName ='cms-general' }
 
 dependencies {
     compile (
