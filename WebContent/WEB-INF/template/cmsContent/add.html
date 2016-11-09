@@ -92,7 +92,13 @@ function clickAddTag(){
 				<#else>
 					<dl>
 						<dt>作者:</dt>
-						<dd><input name="author" type="text" maxlength="50" size="20" value="${(a.author)!}"/></dd>
+						<dd>
+						<#if model.id==8>
+							<input name="author" class="required" type="text" maxlength="50" size="20" value="${(a.author)!}"/>
+						<#else>
+							<input name="author" type="text" maxlength="50" size="20" value="${(a.author)!}"/>
+						</#if>
+						</dd>
 					</dl>
 					<dl>
 						<dt>编辑:</dt>
@@ -105,7 +111,13 @@ function clickAddTag(){
 				</#if>
 					<dl class="nowrap">
 						<dt>描述:</dt>
-						<dd><textarea name="description" maxlength="300" style="width: 100%;" rows="5">${(a.description?html)!}</textarea></dd>
+						<dd>
+							<#if model.id==8>
+								<textarea name="description" class="required" maxlength="300" style="width: 100%;" rows="5">${(a.description?html)!}</textarea>
+							<#else>
+								<textarea name="description" maxlength="300" style="width: 100%;" rows="5">${(a.description?html)!}</textarea>
+							</#if>
+						</dd>
 					</dl>
 					<dl>
 						<dt>定时发布:</dt>
@@ -128,12 +140,29 @@ function clickAddTag(){
 					<dl class="nowrap">
 						<dt>封面:</dt>
 						<dd>
-							<input name="cover" value="${(a.cover)!}" maxlength="300" size="40" type="text"/>
+							<#if model.id==8>
+								<input name="cover" value="${(a.cover)!}" class="required" maxlength="300" size="40" type="text"/>
+							<#else>
+								<input name="cover" value="${(a.cover)!}" maxlength="300" size="40" type="text"/>
+							</#if>
+							
 							<a class="btnAttach" href="common/upload.html?field=cover&onlyImage=true" lookupGroup="" width="560" height="300">图片</a>
 							<#include "../include_page/preview.html"/>
 							<@preview 'content' 'input[name=cover]'/>
 						</dd>
 					</dl>
+					<#if model.id==8>
+						<dl class="nowrap">
+						<dt>焦点新闻:</dt>
+						<dd>
+							<select class="combox" name="focus">
+								<option value="true"${(a.focus?has_content&&true=a.focus)?then(' selected="true"','')}>是</option>
+								<option value="false"${(!a.focus?has_content||false=a.focus)?then(' selected="true"','')}>否</option>
+							</select>
+						</dd>
+					</dl>
+					</#if>
+					
 		<#include "../include_page/extendData.html"/>
 		<#if category?has_content&&category.extendId?has_content>
 			<@_sysExtendFieldList extendId=category.extendId>

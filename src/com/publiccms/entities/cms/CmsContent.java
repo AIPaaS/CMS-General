@@ -123,13 +123,14 @@ public class CmsContent implements java.io.Serializable, Staticable {
     private int status;
     @MyColumn(title = "已删除", condition = true)
     private boolean disabled;
-
+    @MyColumn(title = "焦点", condition = true)
+    private boolean focus;
     public CmsContent() {
     }
 
     public CmsContent(int siteId, String title, long userId, int categoryId, int modelId, boolean copied, boolean onlyUrl,
             boolean hasImages, boolean hasFiles, boolean hasStatic, int childs, int scores, int comments, int clicks,
-            Date publishDate, Date createDate, int status, boolean disabled) {
+            Date publishDate, Date createDate, int status, boolean disabled, boolean focus) {
         this.siteId = siteId;
         this.title = title;
         this.userId = userId;
@@ -148,12 +149,13 @@ public class CmsContent implements java.io.Serializable, Staticable {
         this.createDate = createDate;
         this.status = status;
         this.disabled = disabled;
+        this.focus = focus;
     }
 
     public CmsContent(int siteId, String title, long userId, Long checkUserId, int categoryId, int modelId, Long parentId,
             boolean copied, String author, String editor, boolean onlyUrl, boolean hasImages, boolean hasFiles,
             boolean hasStatic, String url, String description, String tagIds, String cover, int childs, int scores, int comments,
-            int clicks, Date publishDate, Date createDate, int status, boolean disabled) {
+            int clicks, Date publishDate, Date createDate, int status, boolean disabled, boolean focus) {
         this.siteId = siteId;
         this.title = title;
         this.userId = userId;
@@ -180,6 +182,7 @@ public class CmsContent implements java.io.Serializable, Staticable {
         this.createDate = createDate;
         this.status = status;
         this.disabled = disabled;
+        this.focus = focus;
     }
 
     @Id
@@ -430,4 +433,12 @@ public class CmsContent implements java.io.Serializable, Staticable {
         this.disabled = disabled;
     }
 
+    @Column(name = "focus", nullable = false)
+    public boolean isFocus() {
+        return this.focus;
+    }
+
+    public void setFocus(boolean focus) {
+        this.focus = focus;
+    }
 }

@@ -33,7 +33,7 @@ public class CmsContentListDirective extends AbstractTemplateDirective {
             }
         }
         PageHandler page = service.getPage(getSite(handler).getId(), status, handler.getInteger("categoryId"),
-                handler.getBoolean("containChild"), disabled, handler.getIntegerArray("modelId"), handler.getLong("parentId"),
+                handler.getBoolean("containChild"), disabled, handler.getBoolean("focus"), handler.getIntegerArray("modelId"), handler.getLong("parentId"),
                 emptyParent, handler.getBoolean("onlyUrl"), handler.getBoolean("hasImages"), handler.getBoolean("hasFiles"),
                 handler.getString("title"), handler.getLong("userId"), handler.getLong("checkUserId"),
                 handler.getDate("startPublishDate"), endPublishDate, handler.getString("orderField"),

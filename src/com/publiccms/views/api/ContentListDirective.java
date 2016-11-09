@@ -37,7 +37,8 @@ public class ContentListDirective extends AbstractAppV1Directive {
         Integer[] status = new Integer[] { CmsContentService.STATUS_NORMAL };
         Boolean disabled = false;
         Boolean emptyParent = true;
-        PageHandler page = service.getPage(getSite(handler).getId(), status, categoryId, containChild, disabled, null, parentId,
+        Boolean focus = handler.getBoolean("focus");
+        PageHandler page = service.getPage(getSite(handler).getId(), status, categoryId, containChild, disabled, focus, null, parentId,
                 emptyParent, onlyUrl, hasImages, hasFiles, null, authorId, null, null, endPublishDate, null, null, pageIndex,
                 count);
         handler.put("page", page).render();

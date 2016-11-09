@@ -74,7 +74,7 @@ public class CmsContentDao extends BaseDao<CmsContent> {
         }
     }
 
-    public PageHandler getPage(Integer siteId, Integer[] status, Integer categoryId, Integer[] categoryIds, Boolean disabled,
+    public PageHandler getPage(Integer siteId, Integer[] status, Integer categoryId, Integer[] categoryIds, Boolean disabled, Boolean focus,
             Integer[] modelId, Long parentId, Boolean emptyParent, Boolean onlyUrl, Boolean hasImages, Boolean hasFiles,
             String title, Long userId, Long checkUserId, Date startPublishDate, Date endPublishDate, String orderField,
             String orderType, Integer pageIndex, Integer pageSize) {
@@ -92,6 +92,9 @@ public class CmsContentDao extends BaseDao<CmsContent> {
         }
         if (notEmpty(disabled)) {
             queryHandler.condition("bean.disabled = :disabled").setParameter("disabled", disabled);
+        }
+        if (notEmpty(focus)) {
+            queryHandler.condition("bean.focus = :focus").setParameter("focus", focus);
         }
         if (notEmpty(modelId)) {
             queryHandler.condition("bean.modelId in (:modelId)").setParameter("modelId", modelId);
