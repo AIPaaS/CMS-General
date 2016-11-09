@@ -156,8 +156,8 @@ function clickAddTag(){
 						<dt>焦点新闻:</dt>
 						<dd>
 							<select class="combox" name="focus">
-								<option value="true"${(a.focus?has_content&&true=a.focus)?then(' selected="true"','')}>是</option>
-								<option value="false"${(!a.focus?has_content||false=a.focus)?then(' selected="true"','')}>否</option>
+								<option value="true"${(a?has_content&&a.focus?has_content&&true=a.focus)?then(' selected="true"','')}>是</option>
+								<option value="false"${(!a?has_content||!a.focus?has_content||false=a.focus)?then(' selected="true"','')}>否</option>
 							</select>
 						</dd>
 					</dl>
